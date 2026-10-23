@@ -1,85 +1,105 @@
 {
  "frites": {
-  "type": "frames",
-  "photo": "6b_d7ba0c532947debe063317f74c6696-orig.jpg",
-  "source": "2000x1331",
+  "type": "video",
+  "ai": true,
   "tiers": {
-   "d": {
-    "w": 1440,
-    "h": 900,
-    "count": 60,
-    "path": "films/frites/d/",
-    "maxSourceScale": 1.0
+   "l": {
+    "src": "films/frites/l.mp4",
+    "w": 1280,
+    "h": 720,
+    "poster": "films/frites/l-poster.webp",
+    "pw": 1920,
+    "ph": 1080,
+    "bytes": 1115692,
+    "status": "pending-upscale"
    },
-   "m": {
-    "w": 1170,
-    "h": 900,
-    "count": 60,
-    "path": "films/frites/m/",
-    "maxSourceScale": 1.0
+   "p": {
+    "src": "films/frites/p.mp4",
+    "w": 704,
+    "h": 1280,
+    "poster": "films/frites/p-poster.webp",
+    "pw": 748,
+    "ph": 1331,
+    "bytes": 1155277,
+    "status": "pending-upscale"
    }
   }
  },
  "benedict": {
-  "type": "frames",
-  "photo": "79_3e16ef4cef4fe582ae876ba454ba24-orig.jpg",
-  "source": "2000x1331",
+  "type": "video",
+  "ai": true,
   "tiers": {
-   "d": {
-    "w": 1440,
-    "h": 900,
-    "count": 60,
-    "path": "films/benedict/d/",
-    "maxSourceScale": 1.0
+   "l": {
+    "src": "films/benedict/l.mp4",
+    "w": 1280,
+    "h": 720,
+    "poster": "films/benedict/l-poster.webp",
+    "pw": 1920,
+    "ph": 1080,
+    "bytes": 1018212,
+    "status": "pending-upscale"
    },
-   "m": {
-    "w": 1170,
-    "h": 900,
-    "count": 60,
-    "path": "films/benedict/m/",
-    "maxSourceScale": 1.0
+   "p": {
+    "src": "films/benedict/p.mp4",
+    "w": 704,
+    "h": 1280,
+    "poster": "films/benedict/p-poster.webp",
+    "pw": 748,
+    "ph": 1331,
+    "bytes": 930442,
+    "status": "pending-upscale"
    }
   }
  },
  "latke": {
-  "type": "frames",
-  "photo": "89_1ee1ec118845b8a0027ba13ed680d9-orig.jpg",
-  "source": "1500x2000",
+  "type": "video",
+  "ai": true,
   "tiers": {
-   "d": {
-    "w": 1440,
-    "h": 900,
-    "count": 60,
-    "path": "films/latke/d/",
-    "maxSourceScale": 1.0
+   "l": {
+    "src": "films/latke/l.mp4",
+    "w": 1264,
+    "h": 720,
+    "poster": "films/latke/l-poster.webp",
+    "pw": 1500,
+    "ph": 844,
+    "bytes": 780463,
+    "status": "pending-upscale"
    },
-   "m": {
-    "w": 1170,
-    "h": 1560,
-    "count": 60,
-    "path": "films/latke/m/",
-    "maxSourceScale": 1.0
+   "p": {
+    "src": "films/latke/p.mp4",
+    "w": 704,
+    "h": 1280,
+    "poster": "films/latke/p-poster.webp",
+    "pw": 1080,
+    "ph": 1922,
+    "bytes": 793085,
+    "status": "pending-upscale"
    }
   }
  },
  "bar": {
-  "type": "frames",
-  "photo": "63_5f9b86b31749b09b43e5ff3283a00b-orig.jpg",
-  "source": "1522x694",
+  "type": "video",
+  "ai": true,
   "tiers": {
-   "d": {
-    "w": 1440,
-    "h": 694,
-    "count": 40,
-    "path": "films/bar/d/",
-    "maxSourceScale": 1.0
+   "l": {
+    "src": "films/bar/l.mp4",
+    "w": 1280,
+    "h": 704,
+    "poster": "films/bar/l-poster.webp",
+    "pw": 1280,
+    "ph": 704,
+    "bytes": 1130262,
+    "status": "pending-upscale"
    },
-   "m": {
-    "w": 1170,
-    "h": 560,
-    "count": 40,
-    "path": "films/bar/m/",
-    "maxSourceScale": 1.0
+   "p": {
+    "src": "films/bar/p.mp4",
+    "w": 720,
+    "h": 1264,
+    "poster": "films/bar/p-poster.webp",
+    "pw": 720,
+    "ph": 1264,
+    "bytes": 944933,
+    "status": "pending-upscale"
    }
   }
  }

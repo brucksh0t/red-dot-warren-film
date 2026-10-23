@@ -8,7 +8,9 @@
 <meta name="theme-color" content="#151112">
 <link rel="icon" href="img/favicon.png">
 <link rel="preload" href="fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="styles.css?v=1">
+<link rel="preload" as="image" href="films/frites/l-poster.webp" media="(orientation:landscape)" fetchpriority="high">
+<link rel="preload" as="image" href="films/frites/p-poster.webp" media="(orientation:portrait)" fetchpriority="high">
+<link rel="stylesheet" href="styles.css?v=2">
 <script>(function(){var q=location.search,r=matchMedia('(prefers-reduced-motion: reduce)').matches,c=navigator.connection,s=c&&(c.saveData||/2g/.test(c.effectiveType||''));if(!r&&!/static=1/.test(q)&&!s)document.documentElement.classList.add('motion');document.documentElement.classList.add('js')})()</script>
 </head>
 <body>
@@ -21,10 +23,11 @@
 <main id="main">
 <section class="film" id="top" data-film="frites" aria-labelledby="h-hero">
  <div class="pin">
-  <div class="media"><picture class="poster" style="--dw:1440;--mw:1170"><source media="(orientation:portrait)" srcset="films/frites/m/poster.webp" width="1170" height="900" type="image/webp"><source srcset="films/frites/d/poster.webp" type="image/webp"><img src="films/frites/d/poster.jpg" width="1440" height="900" alt="Frites and a fried egg sandwich on a white plate, on a round red tabletop, seen from above" fetchpriority="high" decoding="async"></picture></div>
-  <p class="cap" aria-hidden="true">Photo: Red Dot · <b data-info>frites from above</b></p>
+  <div class="media"><picture class="poster"><source media="(orientation:portrait)" srcset="films/frites/p-poster.webp" width="748" height="1331"><img src="films/frites/l-poster.webp" width="1920" height="1080" alt="Frites and a fried egg sandwich on a white plate, on a round red tabletop, seen from above" fetchpriority="high" decoding="async"></picture></div>
+  <p class="cap"><span class="ai" title="AI-generated motion">AI</span> video from a Red Dot photo · <b data-info>frites from above</b></p>
   <div class="band">
    <p class="kick">321 Warren St · Hudson · since 1999</p>
+   <p class="tonight" data-tonight>Dinner Fri–Tue 5–9:30 PM · Brunch Sat &amp; Sun 11–3</p>
    <h1 class="disp" id="h-hero">The red table<br>on Warren.</h1>
    <div class="ctas"><a class="btn fill" href="https://tmt.spotapps.co/reservations?spot_id=149842">Book a table</a><a class="btn" href="#kitchen">Tonight’s menu</a></div>
   </div>
@@ -33,9 +36,9 @@
 
 <section class="film on-red" id="dot" data-film="benedict" aria-labelledby="h-dot">
  <div class="pin">
-  <div class="media"><picture class="poster" style="--dw:1440;--mw:1170"><source media="(orientation:portrait)" srcset="films/benedict/m/poster.webp" width="1170" height="900" type="image/webp"><source srcset="films/benedict/d/poster.webp" type="image/webp"><img src="films/benedict/d/poster.jpg" width="1440" height="900" alt="Eggs Benedict with roasted potatoes on a round red tabletop, seen from above" loading="lazy" decoding="async"></picture></div>
+  <div class="media"><picture class="poster"><source media="(orientation:portrait)" srcset="films/benedict/p-poster.webp" width="748" height="1331"><img src="films/benedict/l-poster.webp" width="1920" height="1080" alt="Eggs Benedict with roasted potatoes on a round red tabletop, seen from above" loading="lazy" decoding="async"></picture></div>
   <svg aria-hidden="true" focusable="false"><defs><mask id="dotmask" maskUnits="userSpaceOnUse"><rect class="mr" fill="#fff"/><g class="dg"><text class="dw" text-anchor="middle" dominant-baseline="central" font-family="Archivo" font-weight="900" font-stretch="62%" fill="#000">DOT</text></g></mask></defs><rect class="mr" fill="#d81f27" mask="url(#dotmask)"/></svg>
-  <p class="cap" aria-hidden="true">Photo: Red Dot · <b data-info>Benedict, red table</b></p>
+  <p class="cap"><span class="ai" title="AI-generated motion">AI</span> video from a Red Dot photo · <b data-info>Benedict, red table</b></p>
   <div class="band">
    <p class="kick">Every plate lands on red</p>
    <h2 class="disp" id="h-dot">Look for<br>the red dot.</h2>
@@ -102,8 +105,8 @@
 
 <section class="film" id="brunch" data-film="latke" aria-labelledby="h-brunch">
  <div class="pin">
-  <div class="media"><picture class="poster" style="--dw:1440;--mw:1170"><source media="(orientation:portrait)" srcset="films/latke/m/poster.webp" width="1170" height="1560" type="image/webp"><source srcset="films/latke/d/poster.webp" type="image/webp"><img src="films/latke/d/poster.jpg" width="1440" height="900" alt="Smoked salmon Benedict on a potato latke, seen from above" loading="lazy" decoding="async"></picture></div>
-  <p class="cap" aria-hidden="true">Photo: Red Dot · <b data-info>latke Benedict</b></p>
+  <div class="media"><picture class="poster"><source media="(orientation:portrait)" srcset="films/latke/p-poster.webp" width="1080" height="1922"><img src="films/latke/l-poster.webp" width="1500" height="844" alt="Smoked salmon Benedict on a potato latke, seen from above" loading="lazy" decoding="async"></picture></div>
+  <p class="cap"><span class="ai" title="AI-generated motion">AI</span> video from a Red Dot photo · <b data-info>latke Benedict</b></p>
   <div class="band">
    <p class="kick">Brunch · Sat &amp; Sun · 11 AM–3 PM</p>
    <h2 class="disp" id="h-brunch">Benedict<br>on a latke.</h2>
@@ -122,15 +125,15 @@
    <button class="room" aria-pressed="false"><span class="n">02</span><h3>The Dance<br>Floor</h3><p class="rx">From the 2002 expansion next door, for the party that keeps going after dinner. Halloween lives here.</p></button>
    <button class="room" aria-pressed="false"><span class="n">03</span><h3>The Screening<br>Room</h3><p class="rx">A room of your own for the group. Red Dot has hosted charity auctions here.</p></button>
   </div>
-  <p class="note">Capacity for each space isn’t published. Call to confirm: <a href="tel:+15188283657">(518) 828-3657</a>.</p>
+  <p class="note">Capacity for each space isn’t published. Call to confirm: <a class="tt" href="tel:+15188283657">(518) 828-3657</a>.</p>
   <div class="row"><a class="btn fill" href="https://tmt.spotapps.co/private-parties?spot_id=149842">Book a party</a><a class="btn" href="tel:+15188283657">Call</a></div>
  </div>
 </section>
 
 <section class="film bar-film" id="bar" data-film="bar" aria-labelledby="h-bar">
  <div class="pin">
-  <div class="media"><picture class="poster" style="--dw:1440;--mw:1170"><source media="(orientation:portrait)" srcset="films/bar/m/poster.webp" width="1170" height="560" type="image/webp"><source srcset="films/bar/d/poster.webp" type="image/webp"><img src="films/bar/d/poster.jpg" width="1440" height="694" alt="The long wooden bar with yellow stools and the BAR sign over the bottles" loading="lazy" decoding="async"></picture></div>
-  <p class="cap" aria-hidden="true">Photo: Red Dot · <b data-info>the bar</b></p>
+  <div class="media"><picture class="poster"><source media="(orientation:portrait)" srcset="films/bar/p-poster.webp" width="720" height="1264"><img src="films/bar/l-poster.webp" width="1280" height="704" alt="The long wooden bar with yellow stools and the BAR sign over the bottles" loading="lazy" decoding="async"></picture></div>
+  <p class="cap"><span class="ai" title="AI-generated motion">AI</span> video from a Red Dot photo · <b data-info>the bar</b></p>
   <div class="band">
    <p class="kick">House cocktails · $16</p>
    <h2 class="disp" id="h-bar">Pull up a<br>yellow stool.</h2>
@@ -146,7 +149,7 @@
   <div class="cols">
    <div>
     <p class="addr">321 Warren Street<br>Hudson, NY 12534</p>
-    <p style="margin-top:16px"><a href="tel:+15188283657">(518) 828-3657</a> · No online ordering; call ahead for pickup.</p>
+    <p style="margin-top:16px"><a class="tt" href="tel:+15188283657">(518) 828-3657</a> · No online ordering; call ahead for pickup.</p>
     <div class="row"><a class="btn fill" href="https://tmt.spotapps.co/reservations?spot_id=149842">Reserve a table</a><a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Red%20Dot%20Restaurant%20%26%20Bar%2C%20321%20Warren%20St%2C%20Hudson%2C%20NY%2012534">Directions</a></div>
    </div>
    <div>
@@ -168,11 +171,11 @@
 </section>
 </main>
 <footer>
- <p>Concept redesign preview. Not affiliated with or endorsed by Red Dot Restaurant &amp; Bar. Photos from Red Dot’s own website gallery. The moving scenes are camera moves cut frame by frame from those photos, not filmed video. <a href="?static=1">Static page</a>.</p>
- <p><a href="https://www.instagram.com/reddothudson">Instagram</a> · <a href="https://www.facebook.com/310465430424">Facebook</a> · <a href="https://reddothudson.net/">Current site</a></p>
+ <p>Concept redesign preview. Not affiliated with or endorsed by Red Dot Restaurant &amp; Bar. Photos from Red Dot’s own website gallery. The moving scenes are AI-generated video made from those photos (labelled AI), not filmed footage. <a class="tt" href="?static=1">Static page</a>.</p>
+ <p><a class="tt" href="https://www.instagram.com/reddothudson">Instagram</a> <a class="tt" href="https://www.facebook.com/310465430424">Facebook</a> <a class="tt" href="https://reddothudson.net/">Current site</a></p>
 </footer>
 <script src="vendor/gsap.min.js" defer></script>
 <script src="vendor/ScrollTrigger.min.js" defer></script>
-<script src="main.js?v=1" defer></script>
+<script src="main.js?v=2" defer></script>
 </body>
 </html>
