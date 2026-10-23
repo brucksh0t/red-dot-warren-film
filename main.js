@@ -1,6 +1,6 @@
 /* Red Dot · The red table on Warren. One scroll owner (native scroll + GSAP ScrollTrigger, scrub:true).
    Films come from films/manifest.json: one all-keyframe AI clip per film per orientation (l/p), seeked by
-   scroll progress and shown full-bleed (object-fit:cover). Clips are 720p pending Topaz upscale; swapping
+   scroll progress and shown full-bleed (object-fit:cover). Clips are 720p AI masters upscaled with Topaz Proteus (3840x2160 / 1440x2560); swapping
    the upscaled files in needs only build-clips.py. Nothing film-related loads before the first interaction. */
 (function(){
 'use strict';
@@ -45,7 +45,7 @@ Film.prototype.seek=function(){var v=this.v;if(!v||v.readyState<1)return;var t=t
 Film.prototype.layout=function(){if(this.started&&this.pick()!==this.tier)this.load();this.caption()};
 Film.prototype.caption=function(){if(!this.info)return;var v=this.v,r=this.media.getBoundingClientRect();
   if(!this.showInfo||!v){this.info.textContent=this.label;return}
-  var k=Math.max(r.width/this.w,r.height/this.h);this.info.textContent='frame '+((this.idx||0)+1)+' · '+this.w+'×'+this.h+' · '+k.toFixed(2)+'x css · pending upscale'};
+  var k=Math.max(r.width/this.w,r.height/this.h);this.info.textContent='frame '+((this.idx||0)+1)+' · '+this.w+'×'+this.h+' · '+k.toFixed(2)+'x css · Topaz upscale'};
 
 function proxyTL(film,trig,len,build){
   var o={p:0},tl=gsap.timeline({defaults:{ease:'none'},scrollTrigger:{trigger:trig,pin:film.pin,start:'top top',end:'+='+len+'%',scrub:true,anticipatePin:1}});
