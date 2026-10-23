@@ -19,4 +19,4 @@ Hours, address, phone, history (Bastille Day 1999 as Raymakers, 2002 expansion),
 Archivo (SIL OFL, Google Fonts), self-hosted latin subset. GSAP 3 + ScrollTrigger, self-hosted in `vendor/` (standard GSAP license).
 
 ## AI video
-All four films are AI image-to-video (Grok Imagine via GenerateVideo, 720p, Oct 23 2026) generated from the photos above, each starting on the real photo crop. Labelled "AI" on screen. Known drift: portrait frites shows a sunny yolk; portrait bar garbles the BAR sign late in the clip; latke yolk run is invented motion.
+All four films are AI image-to-video (Grok Imagine via GenerateVideo, 720p, Oct 23 2026) generated from the photos above, each starting on the real photo crop. Labelled "AI" on screen. v2: seven clips were regenerated with the first and last frame pinned to real crops of the photo (v1 drift: a runny yolk on the fried egg, the BAR sign garbled to BAY, an invented latke yolk run, hollandaise poured from above on the Benedict, a new pendant lamp in the bar). Motion is now only a camera move plus faint steam. frites-l is unchanged.

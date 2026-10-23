@@ -15,12 +15,12 @@
    },
    "p": {
     "src": "films/frites/p.mp4",
-    "w": 704,
+    "w": 720,
     "h": 1280,
     "poster": "films/frites/p-poster.webp",
     "pw": 748,
     "ph": 1331,
-    "bytes": 1155277,
+    "bytes": 978729,
     "status": "pending-upscale"
    }
   }
@@ -36,17 +36,17 @@
     "poster": "films/benedict/l-poster.webp",
     "pw": 1920,
     "ph": 1080,
-    "bytes": 1018212,
+    "bytes": 1039490,
     "status": "pending-upscale"
    },
    "p": {
     "src": "films/benedict/p.mp4",
-    "w": 704,
+    "w": 720,
     "h": 1280,
     "poster": "films/benedict/p-poster.webp",
     "pw": 748,
     "ph": 1331,
-    "bytes": 930442,
+    "bytes": 939954,
     "status": "pending-upscale"
    }
   }
@@ -57,22 +57,22 @@
   "tiers": {
    "l": {
     "src": "films/latke/l.mp4",
-    "w": 1264,
+    "w": 1280,
     "h": 720,
     "poster": "films/latke/l-poster.webp",
     "pw": 1500,
     "ph": 844,
-    "bytes": 780463,
+    "bytes": 728442,
     "status": "pending-upscale"
    },
    "p": {
     "src": "films/latke/p.mp4",
-    "w": 704,
+    "w": 720,
     "h": 1280,
     "poster": "films/latke/p-poster.webp",
     "pw": 1080,
     "ph": 1922,
-    "bytes": 793085,
+    "bytes": 758203,
     "status": "pending-upscale"
    }
   }
@@ -84,21 +84,21 @@
    "l": {
     "src": "films/bar/l.mp4",
     "w": 1280,
-    "h": 704,
+    "h": 720,
     "poster": "films/bar/l-poster.webp",
     "pw": 1280,
-    "ph": 704,
-    "bytes": 1130262,
+    "ph": 720,
+    "bytes": 1077082,
     "status": "pending-upscale"
    },
    "p": {
     "src": "films/bar/p.mp4",
     "w": 720,
-    "h": 1264,
+    "h": 1280,
     "poster": "films/bar/p-poster.webp",
     "pw": 720,
-    "ph": 1264,
-    "bytes": 944933,
+    "ph": 1280,
+    "bytes": 823878,
     "status": "pending-upscale"
    }
   }
