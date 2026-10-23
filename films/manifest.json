@@ -1,0 +1,86 @@
+{
+ "frites": {
+  "type": "frames",
+  "photo": "6b_d7ba0c532947debe063317f74c6696-orig.jpg",
+  "source": "2000x1331",
+  "tiers": {
+   "d": {
+    "w": 1440,
+    "h": 900,
+    "count": 60,
+    "path": "films/frites/d/",
+    "maxSourceScale": 1.0
+   },
+   "m": {
+    "w": 1170,
+    "h": 900,
+    "count": 60,
+    "path": "films/frites/m/",
+    "maxSourceScale": 1.0
+   }
+  }
+ },
+ "benedict": {
+  "type": "frames",
+  "photo": "79_3e16ef4cef4fe582ae876ba454ba24-orig.jpg",
+  "source": "2000x1331",
+  "tiers": {
+   "d": {
+    "w": 1440,
+    "h": 900,
+    "count": 60,
+    "path": "films/benedict/d/",
+    "maxSourceScale": 1.0
+   },
+   "m": {
+    "w": 1170,
+    "h": 900,
+    "count": 60,
+    "path": "films/benedict/m/",
+    "maxSourceScale": 1.0
+   }
+  }
+ },
+ "latke": {
+  "type": "frames",
+  "photo": "89_1ee1ec118845b8a0027ba13ed680d9-orig.jpg",
+  "source": "1500x2000",
+  "tiers": {
+   "d": {
+    "w": 1440,
+    "h": 900,
+    "count": 60,
+    "path": "films/latke/d/",
+    "maxSourceScale": 1.0
+   },
+   "m": {
+    "w": 1170,
+    "h": 1560,
+    "count": 60,
+    "path": "films/latke/m/",
+    "maxSourceScale": 1.0
+   }
+  }
+ },
+ "bar": {
+  "type": "frames",
+  "photo": "63_5f9b86b31749b09b43e5ff3283a00b-orig.jpg",
+  "source": "1522x694",
+  "tiers": {
+   "d": {
+    "w": 1440,
+    "h": 694,
+    "count": 40,
+    "path": "films/bar/d/",
+    "maxSourceScale": 1.0
+   },
+   "m": {
+    "w": 1170,
+    "h": 560,
+    "count": 40,
+    "path": "films/bar/m/",
+    "maxSourceScale": 1.0
+   }
+  }
+ }
+}
