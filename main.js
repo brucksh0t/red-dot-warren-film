@@ -33,12 +33,12 @@ Film.prototype.load=function(){ // only ever called after the first user interac
   if(this.v){this.v.remove();this.el.classList.remove('ready')}
   var v=this.v=document.createElement('video');v.muted=true;v.defaultMuted=true;v.playsInline=true;v.setAttribute('playsinline','');v.preload='auto';v.disablePictureInPicture=true;
   v.setAttribute('aria-hidden','true');v.tabIndex=-1;v.src=s.src;this.w=s.w;this.h=s.h;
-  v.addEventListener('loadeddata',function(){me.seek()});
+  v.addEventListener('loadedmetadata',function(){me.draw()});v.addEventListener('loadeddata',function(){me.busy=false;me.draw()});
   v.addEventListener('seeked',function(){me.el.classList.add('ready');me.busy=false;me.caption();if(me.want!=null&&Math.abs(me.want-v.currentTime)>.001)me.seek()});
   v.addEventListener('click',function(){me.showInfo=!me.showInfo;me.caption()});
   this.media.appendChild(v);
 };
-Film.prototype.draw=function(){var v=this.v;if(!v||!v.duration)return;var fps=10,n=Math.round(v.duration*fps);
+Film.prototype.draw=function(){var v=this.v;if(!v||!v.duration||v.readyState<1)return;var fps=10,n=Math.round(v.duration*fps);
   this.idx=Math.round(clamp(this.p,0,1)*(n-1));this.want=this.idx/fps+.5/fps;if(!this.busy)this.seek()};
 Film.prototype.seek=function(){var v=this.v;if(!v||v.readyState<1)return;var t=this.want==null?.05:this.want;
   if(Math.abs(v.currentTime-t)<.001&&v.readyState>=2){this.busy=false;this.el.classList.add('ready');return}this.busy=true;v.currentTime=t};
